@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>User Login</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+<link rel="stylesheet" href="style.css" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+<img src=OIP.webp alt="Logo" class="top-left-image" />
+
+<div class="login-container">
+  
+  <h1>Welcome Back 👋</h1>
+  <p class="subtitle">Please login to your account</p>
+
+  <form id="loginForm" novalidate>
+
+    <!-- Username -->
+    <div class="input-wrapper">
+      <label for="username">Username</label>
+      <span class="icon"><i class="fa-solid fa-user"></i></span>
+      <input type="text" id="username" placeholder="Enter your username" autocomplete="off" required />
+    </div>
+
+    <!-- Password -->
+    <div class="input-wrapper password-field">
+      <label for="password">Password</label>
+      <span class="icon"><i class="fa-solid fa-lock"></i></span>
+      <input type="password" id="password" placeholder="Enter your password" required />
+      <span class="toggle-password">
+        <i class="fa-solid fa-eye"></i>
+      </span>
+    </div>
+
+    <!-- Options -->
+    <div class="form-options">
+      <label class="remember-me">
+        <input type="checkbox" />
+        Remember me
+      </label>
+      <a href="#" class="forgot-password">Forgot Password?</a>
+    </div>
+
+    <button type="submit" id="loginBtn">
+      <i class="fa-solid fa-right-to-bracket"></i> LOGIN
+    </button>
+
+  </form>
+
+  <!-- Divider -->
+  <div class="divider">
+    <span>or continue with</span>
+  </div>
+
+  <!-- Social Login -->
+  <footer class="footer">
+    <a href="https://facebook.com" target="_blank">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://instagram.com" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://youtube.com" target="_blank">
+      <i class="fab fa-youtube"></i>
+    </a>
+  </footer>
+
+
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

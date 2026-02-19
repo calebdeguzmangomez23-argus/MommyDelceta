@@ -1,0 +1,238 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* BODY BACKGROUND */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    overflow: hidden;
+}
+
+/* Decorative logo */
+.top-left-image {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 60px;
+}
+
+/* LOGIN CARD */
+.login-container {
+    width: 400px;
+    background: #ffffff;
+    padding: 40px 35px;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Title */
+.login-container h1 {
+    text-align: center;
+    margin-bottom: 8px;
+    color: #1b2b4b;
+}
+
+/* Subtitle */
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: #6b7a90;
+    margin-bottom: 30px;
+}
+
+/* INPUT WRAPPER */
+.input-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+.input-wrapper label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 6px;
+    color: #334155;
+}
+
+/* Icon inside input */
+.icon {
+    position: absolute;
+    top: 37px;
+    left: 12px;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+/* Inputs */
+.input-wrapper input {
+    width: 100%;
+    padding: 12px 12px 12px 38px;
+    border-radius: 8px;
+    border: 1px solid #dbe2ea;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+/* Input Focus */
+.input-wrapper input:focus {
+    border-color: #00c6ff;
+    box-shadow: 0 0 0 3px rgba(0, 198, 255, 0.15);
+    outline: none;
+}
+
+/* Password toggle */
+.toggle-password {
+    position: absolute;
+    top: 37px;
+    right: 12px;
+    cursor: pointer;
+    color: #94a3b8;
+}
+
+/* FORM OPTIONS */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.remember-me input {
+    margin-right: 5px;
+}
+
+.forgot-password {
+    text-decoration: none;
+    color: #00c6ff;
+    transition: 0.3s;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* LOGIN BUTTON */
+#loginBtn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #00c6ff, #00ffb3);
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#loginBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 198, 255, 0.3);
+}
+
+/* DIVIDER */
+.divider {
+    text-align: center;
+    margin: 25px 0;
+    position: relative;
+    font-size: 13px;
+    color: #94a3b8;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 35%;
+    height: 1px;
+    background: #e2e8f0;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+/* SOCIAL FOOTER */
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.footer a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f1f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #334155;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.footer a:hover {
+    transform: translateY(-3px);
+    color: #fff;
+}
+
+/* Brand colors on hover */
+.footer a:nth-child(1):hover {
+    background: #1877f2;
+}
+
+.footer a:nth-child(2):hover {
+    background: #e1306c;
+}
+
+.footer a:nth-child(3):hover {
+    background: #ff0000;
+}
+
+
+.register-link a {
+    text-decoration: none;
+    color: #00c6ff;
+    font-weight: 500;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}

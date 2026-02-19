@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio | Personal Portfolio</title>
+  <link rel="stylesheet" href="style2.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+
+  <a href="index.html" class="back-btn">← Back to Login</a>
+
+
+  <header class="navbar">
+    <div class="logo">IT204</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>My Personal Portfolio</h1>
+      <p>
+        As an IT student and a devoted mother, I walk a path filled with challenges — from sleepless nights balancing schoolwork and parenthood to overcoming the many obstacles life presents. Despite the hardships, my determination never fades. Every line of code I learn, every project I complete, and every exam I pass brings me one step closer to a brighter future — not just for myself, but for my children. They are my greatest motivation, pushing me to keep going even when things get tough. I study hard because I dream of giving them a life filled with security, opportunity, and love. Being a mother and an IT student is not easy, but it’s a journey that proves courage, sacrifice, and perseverance can lead to success. My story is one of hope — a reminder that no dream is too big when it’s fueled by a mother’s heart.
+      <button class="btn btn-primary">Go to Home Page</button>
+    </div>
+    <div class="hero-image">
+      <img src="619341319_884804341188688_5069810911817972165_n.jpg" alt="Portfolio Image">
+    </div>
+  </section>
+
+
+  <div class="container">
+
+
+    <div class="sidebar">
+      <h3>Sidebar</h3>
+      <a onclick="showPage('home')">Home</a>
+      <a onclick="showPage('contact')">Contact</a>
+      <a onclick="showPage('about')">About</a>
+      <a onclick="showPage('help')">Help</a>
+      <a onclick="exitSystem()">Exit</a>
+    </div>
+
+    <div class="content">
+
+      <div id="home" class="page">
+        <h2>Person Information</h2>
+        <input id="fname" placeholder="First Name">
+        <input id="mname" placeholder="Middle Name">
+        <input id="lname" placeholder="Last Name">
+        <input id="age" type="number" placeholder="Age">
+        <input id="gmail" placeholder="Email">
+        <button id="saveBtn">Save 🔒</button>
+      </div>
+
+
+      <div id="contact" class="page hidden">
+        <h2>Contact</h2>
+        <p>gmail: minadelceta20@gmail.com</p>
+      </div>
+
+
+      <div id="about" class="page hidden">
+        <h2>About</h2>
+        <p>A step to become a professional Web Developer</p>
+      </div>
+
+
+      <div id="help" class="page hidden">
+        <h2>Help</h2>
+        <p>Fill out the form and click 'Save'; the information will automatically appear in the table.</p>
+      </div>
+    </div>
+
+
+    <div class="table-area">
+      <h2>Persons Data</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>FIRST NAME</th>
+            <th>MIDDLE NAME</th>
+            <th>LAST NAME</th>
+            <th>AGE</th>
+            <th>EMAIL</th>
+          </tr>
+        </thead>
+        <tbody id="tableData"></tbody>
+      </table>
+    </div>
+
+  </div>
+
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
